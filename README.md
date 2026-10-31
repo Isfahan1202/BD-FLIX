@@ -1,33 +1,28 @@
-BD FLIX
+# BD FLIX Admin v1
 
-Your Ultimate Entertainment Destination.
+## Files
+- `index.html`: public catalogue; reads published titles from Supabase
+- `admin.html`: admin login and movie/title manager
+- `supabase-config.js`: Supabase Project URL + Publishable/anon key
+- `vercel.json`: maps `/admin` to `admin.html`
 
-BD FLIX is a modern and minimal streaming platform designed for Movies, TV Series and Anime lovers.
+## Configure
+Edit `supabase-config.js` and replace the two `PASTE_...` values using Supabase Project Settings → API Keys / Connect:
+- Project URL
+- Publishable key (`sb_publishable_...`) or legacy anon public key
 
-Features
+Never put a `service_role` or Secret key in browser code or GitHub.
 
-- 🎬 Movies Collection
-- 📺 TV Series
-- 🍥 Anime Collection
-- 🔍 Smart Search
-- 🎭 Category Filtering
-- ▶️ Online Video Player
-- 📱 Mobile-Friendly Design
-- ⚡ Fast & Clean Interface
+## Admin password
+Your confirmed Auth user must be present in `public.admin_users`. Open `/admin`, use Forgot password? and follow the recovery email to set a password. Supabase Auth URL Configuration should have Site URL `https://bdflix2026.vercel.app` and Redirect URL `https://bdflix2026.vercel.app/**`.
 
-Technology
+## Deploy from Android
+In GitHub repository `Isfahan1202/BD-FLIX`, upload/replace these files at repository root:
+`index.html`, `admin.html`, `supabase-config.js`, `vercel.json`.
+Commit to `main`; Vercel will redeploy automatically.
 
-- HTML5
-- CSS3
-- JavaScript
-- Vercel Hosting
+Open:
+- https://bdflix2026.vercel.app/
+- https://bdflix2026.vercel.app/admin
 
-Project Status
-
-🚧 Under Development
-
-Disclaimer
-
-BD FLIX is a streaming platform project. Only authorized content is intended to be listed or streamed...
-
-© 2026 BD FLIX. All Rights Reserved.
+This version supports movie/title add, edit, delete and publish/unpublish. Season/episode management and image storage uploads can be added in a later version. Only list/stream media you own or are authorized to use.
