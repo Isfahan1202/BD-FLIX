@@ -28,6 +28,6 @@ Project Status
 
 Disclaimer
 
-BD FLIX is a streaming platform project. Only authorized content is intended to be listed or streamed.
+BD FLIX is a streaming platform project. Only authorized content is intended to be listed or streamed...
 
 © 2026 BD FLIX. All Rights Reserved.
